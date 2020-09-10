@@ -1,4 +1,5 @@
 #include "SDL.h"
+#include <iostream>;
 
 int main(int argc, char* argv[]) {
 	SDL_Init(SDL_INIT_EVERYTHING);
@@ -9,6 +10,8 @@ int main(int argc, char* argv[]) {
 	SDL_RenderClear(renderer);
 	SDL_RenderPresent(renderer);
 	SDL_Delay(3000);
+
+	std::cout << "Hello" << std::endl;
 
 	return 0;
 }
